@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 //        setContentView(R.layout.activity_main);
 //    }
 
+
     // Bài 2:
 //    @Override
 //    protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
 //        txtName.setText(imageName);
 //    }
 
-    // Bài 3:
 
+    // Bài 3:
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_main);
+//    }
 }

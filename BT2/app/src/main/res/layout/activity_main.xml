@@ -6,6 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+<!--match_parent == match_parent-->
+
 
     <!--Bài 1-->
 <!--    <ImageView-->
@@ -50,7 +52,7 @@ Tương tự -> căn giữa cả 4 phía
 
 <!--    <ImageView-->
 <!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        app:layout_constraintTop_toBottomOf="@id/txtImgName"-->
 <!--        app:layout_constraintEnd_toStartOf="parent"-->
@@ -58,7 +60,7 @@ Tương tự -> căn giữa cả 4 phía
 <!--    />-->
 
 <!--    <EditText-->
-<!--        android:layout_width="fill_parent"-->
+<!--        android:layout_width="match_parent"-->
 <!--        android:layout_height="wrap_content"-->
 <!--        android:hint="Viet comment... "-->
 <!--        app:layout_constraintTop_toBottomOf="@id/imageView"-->
@@ -67,4 +69,78 @@ Tương tự -> căn giữa cả 4 phía
 <!--        android:layout_margin="30dp"-->
 <!--    />-->
 
+        <!--Bài 3-->
+<!--    &lt;!&ndash; Layout con 1 chứa ảnh &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layoutImage"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintVertical_weight="1"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintBottom_toTopOf="@id/layoutButton"-->
+<!--        >-->
+<!--            <ImageView-->
+<!--                android:id="@+id/imageAndroid"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:contentDescription="android"-->
+<!--                android:src="@drawable/breakpc"-->
+<!--            />-->
+<!--        </LinearLayout>-->
+<!--    &lt;!&ndash; Layout con 2 chứa 4 button &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/layoutButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:orientation="vertical"-->
+<!--            app:layout_constraintVertical_weight="1"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/layoutImage"-->
+<!--        >-->
+<!--            <Button-->
+<!--                android:id="@+id/new_game"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:lines="1"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="New Game"-->
+<!--                app:cornerRadius="0dp"-->
+<!--            />-->
+<!--            <Button-->
+<!--                android:id="@+id/continue_game"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:lines="1"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="Continue Game"-->
+<!--                app:cornerRadius="0dp"-->
+<!--            />-->
+<!--            <Button-->
+<!--                android:id="@+id/help_game"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:lines="1"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="Help Game"-->
+<!--                app:cornerRadius="0dp"-->
+<!--            />-->
+<!--            <Button-->
+<!--                android:id="@+id/quick_game"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:lines="1"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="Quick Game"-->
+<!--                app:cornerRadius="0dp"-->
+<!--            />-->
+<!--        </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
