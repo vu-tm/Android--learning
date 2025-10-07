@@ -25,5 +25,5 @@
 | `layout_constraintStart_toStartOf`   | Dính trái với trái |
 | `layout_constraintEnd_toEndOf`       | Dính phải với phải |
 
--> Of"@id/..." 
--> @id/paret hoặc parent là **layout cha**
+-> Of"@id/..."   
+-> @id/parent hoặc parent là **layout cha**
