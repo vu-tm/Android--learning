@@ -19,3 +19,6 @@ Toast.makeText(context, text, duration).show();
 | Tùy chỉnh vị trí hiển thị (setGravity)** | Dùng `setGravity()` để di chuyển Toast lên giữa, trên, dưới,...                                                                                                                                        | `java Toast toast = Toast.makeText(this, "Giữa màn hình", Toast.LENGTH_SHORT); toast.setGravity(Gravity.CENTER, 0, 0); toast.show(); `                           | Dùng các hằng số: `Gravity.TOP`, `CENTER`, `BOTTOM`, ...                            |
 | Custom layout (Toast tự thiết kế)**      | Dùng file XML làm giao diện tùy chỉnh cho Toast                                                                                                                                                        | `java View v = getLayoutInflater().inflate(R.layout.custom_toast, null); Toast t = new Toast(this); t.setView(v); t.setDuration(Toast.LENGTH_SHORT); t.show(); ` | Dùng khi cần thông báo đẹp hơn (icon, màu, kiểu chữ…).                              |
 
+### ems
+ems là đơn vị đo độ rộng của văn bản trong TextView hoặc EditText, được tính theo chiều rộng của ký tự chữ "M" trong font hiện tại.
+ems="5" → đủ chỗ cho 5 ký tự
