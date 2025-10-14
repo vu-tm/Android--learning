@@ -27,3 +27,11 @@
 
 -> Of"@id/..."   
 -> @id/parent hoặc parent là **layout cha**
+
+| Thành phần            | Ý nghĩa                                                      |
+| --------------------- | ------------------------------------------------------------ |
+| `xmlns`               | XML namespace – khai báo “nguồn gốc” của thuộc tính          |
+| `xmlns:android="..."` | Khai báo các thuộc tính chuẩn của Android                    |
+| `xmlns:app="..."`     | Khai báo thuộc tính tùy chỉnh (thường dùng trong thư viện)   |
+| Nếu thiếu `xmlns`     | File XML sẽ lỗi vì không biết thuộc tính thuộc namespace nào |
+
