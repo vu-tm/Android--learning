@@ -50,6 +50,13 @@
 <!--    />-->
 
 
-
-    
+    <!--Bài 3-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/view1"-->
+<!--        android:layout_height="400sp"-->
+<!--        android:layout_width="300sp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:orientation="horizontal"-->
+<!--        tools:ignore="MissingConstraints">-->
+<!--    </LinearLayout>-->
 </androidx.constraintlayout.widget.ConstraintLayout>
