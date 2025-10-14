@@ -32,5 +32,20 @@ Toast.makeText(context, text, duration).show();
 | Custom layout (Toast tự thiết kế)**      | Dùng file XML làm giao diện tùy chỉnh cho Toast                                                                                                                                                        | `java View v = getLayoutInflater().inflate(R.layout.custom_toast, null); Toast t = new Toast(this); t.setView(v); t.setDuration(Toast.LENGTH_SHORT); t.show(); ` | Dùng khi cần thông báo đẹp hơn (icon, màu, kiểu chữ…).                              |
 
 ### ems
-ems là đơn vị đo độ rộng của văn bản trong TextView hoặc EditText, được tính theo chiều rộng của ký tự chữ "M" trong font hiện tại.
+ems là đơn vị đo độ rộng của văn bản trong TextView hoặc EditText, được tính theo chiều rộng của ký tự chữ "M" trong font hiện tại.  
 ems="5" → đủ chỗ cho 5 ký tự
+
+### MotionEvent
+| Hằng số (`MotionEvent`)     | Khi nào xảy ra                                                                                                    | Mô tả / Ứng dụng thực tế                                                |
+| --------------------------- | ----------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------- |
+| **`ACTION_DOWN`**           | Khi **ngón tay đầu tiên chạm xuống** màn hình                                                                     | Sự kiện bắt đầu — thường dùng để nhận diện “bắt đầu chạm” hoặc nhấn nút |
+| **`ACTION_UP`**             | Khi **ngón tay nhấc khỏi** màn hình                                                                               | Kết thúc chạm — thường dùng để xác nhận click hoặc thả nút              |
+| **`ACTION_MOVE`**           | Khi **ngón tay di chuyển** trên màn hình                                                                          | Dùng để kéo, vẽ, rê đối tượng, di chuyển hình,…                         |
+| **`ACTION_CANCEL`**         | Khi hệ thống **hủy bỏ** sự kiện chạm (ví dụ bị gián đoạn bởi cuộc gọi, thông báo, hay ngón tay ra khỏi vùng View) | Dùng để reset trạng thái tạm, hủy thao tác                              |
+| **`ACTION_OUTSIDE`**        | Khi sự kiện chạm xảy ra **ngoài vùng View** hiện tại                                                              | Ít dùng, có thể dùng khi cần phát hiện chạm ngoài popup/dialog          |
+| **`ACTION_POINTER_DOWN`**   | Khi **ngón tay thứ 2 (hoặc thứ N)** chạm xuống                                                                    | Dùng cho thao tác đa điểm (multi-touch) như zoom, xoay,…                |
+| **`ACTION_POINTER_UP`**     | Khi **một ngón tay (không phải đầu tiên)** nhấc lên                                                               | Cũng thuộc nhóm multi-touch                                             |
+| **`ACTION_HOVER_MOVE`**     | Khi **con trỏ/chuột/pen di chuyển** mà **chưa chạm**                                                              | Dùng cho stylus hoặc chuột, không phải cảm ứng thông thường             |
+| **`ACTION_SCROLL`**         | Khi có **cuộn** (scroll) do chuột hoặc bánh xe                                                                    | Ít dùng trong cảm ứng                                                   |
+| **`ACTION_BUTTON_PRESS`**   | Khi **nhấn nút chuột / bút stylus**                                                                               | Dùng trong thiết bị có chuột hoặc pen                                   |
+| **`ACTION_BUTTON_RELEASE`** | Khi **thả nút chuột / bút stylus**                                                                                | Tương tự, ít dùng với điện thoại cảm ứng                                |
