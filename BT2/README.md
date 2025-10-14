@@ -28,10 +28,22 @@
 -> Of"@id/..."   
 -> @id/parent hoặc parent là **layout cha**
 
+### xmlns
 | Thành phần            | Ý nghĩa                                                      |
 | --------------------- | ------------------------------------------------------------ |
 | `xmlns`               | XML namespace – khai báo “nguồn gốc” của thuộc tính          |
 | `xmlns:android="..."` | Khai báo các thuộc tính chuẩn của Android                    |
 | `xmlns:app="..."`     | Khai báo thuộc tính tùy chỉnh (thường dùng trong thư viện)   |
 | Nếu thiếu `xmlns`     | File XML sẽ lỗi vì không biết thuộc tính thuộc namespace nào |
+
+
+### inputType
+| Giá trị             | Chức năng                                         |
+| ------------------- | ------------------------------------------------- |
+| `text`              | Văn bản bình thường (không tự viết hoa)           |
+| `textCapSentences`  | Viết hoa chữ cái đầu **mỗi câu**                  |
+| `textCapCharacters` | Viết hoa **tất cả các ký tự**                     |
+| `textEmailAddress`  | Dành cho nhập email, hiển thị bàn phím có ký tự @ |
+| `textPassword`      | Ẩn ký tự nhập (••••••)                            |
+| `number`            | Chỉ cho nhập số                                   |
 
