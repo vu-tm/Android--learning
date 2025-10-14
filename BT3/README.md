@@ -1,5 +1,17 @@
 # SUM UP ACTIVITY
 
+### Vòng đời cơ bản:
+| Hàm           | Ý nghĩa                                      |
+| ------------- | -------------------------------------------- |
+| `onCreate()`  | Khởi tạo activity, set layout, khởi tạo biến |
+| `onStart()`   | Activity sắp hiển thị                        |
+| `onResume()`  | Activity bắt đầu tương tác với người dùng    |
+| `onPause()`   | Tạm dừng (khi có activity khác đè lên)       |
+| `onStop()`    | Không còn hiển thị                           |
+| `onDestroy()` | Bị hủy hoàn toàn                             |
+
+
+
 ### TOAST
 Toast là một thông báo ngắn hiển thị tạm thời trên màn hình (thường ở phía dưới) để báo cho người dùng một sự kiện nhỏ, không làm gián đoạn hoạt động hiện tại.
 ##### Cú pháp:
