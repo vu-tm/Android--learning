@@ -217,7 +217,3 @@ adb shell am start -a android.intent.action.VIEW -d "https://www.example.com/ite
 | Ví dụ | `new Intent(this, DetailActivity.class)` | `new Intent(Intent.ACTION_VIEW, Uri.parse("https://..."))` |
 
 ---
-=======
-# INTENT
-
->>>>>>> e37162fb59fb0e78b95caa161d6282938b9d0142
