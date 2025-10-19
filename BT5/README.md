@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📱 Android Intent & Intent Filter
 
 ## Giới thiệu
