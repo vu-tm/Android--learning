@@ -30,13 +30,16 @@ Trong Android, **Intents** là một objects của android.content.Intent. Inten
 
 ## Cấu trúc Intent cơ bản
 
-| Thành phần | Ý nghĩa | Ví dụ |
-|-------------|----------|--------|
-| `action` | Hành động cần thực hiện | `Intent.ACTION_VIEW`, `Intent.ACTION_SEND` |
-| `data` | Dữ liệu (URI, MIME type) | `Uri.parse("https://example.com")` |
-| `category` | Bổ sung ngữ cảnh | `Intent.CATEGORY_DEFAULT`, `Intent.CATEGORY_BROWSABLE` |
-| `extras` | Dữ liệu bổ sung (key-value) | `intent.putExtra("id", 1)` |
-| `component` | Chỉ rõ Activity/Service đích | `new Intent(this, DetailActivity.class)` |
+| Thành phần      | Ý nghĩa                                                                                                                                                                                                                            | Ví dụ                                                                              |
+| --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **`action`**    | Xác định **hành động** mà Intent sẽ thực hiện. Có thể là hành động do Android định nghĩa sẵn (như `ACTION_VIEW`, `ACTION_SEND`, `ACTION_DIAL`) hoặc do **lập trình viên tự định nghĩa** (thường dùng trong **BroadcastReceiver**). | `intent.setAction(Intent.ACTION_VIEW);`                                            |
+| **`data`**      | Là **dữ liệu mà hành động sẽ xử lý**, thường ở dạng **URI** (Uniform Resource Identifier). Dữ liệu này có thể là một liên kết web, số điện thoại, file, hình ảnh, v.v.                                                             | `intent.setData(Uri.parse("https://example.com"));`                                |
+| **`type`**      | Chỉ định **định dạng MIME type** của dữ liệu (ví dụ `text/plain`, `image/jpeg`). Hệ thống Android dùng thông tin này để chọn ứng dụng phù hợp để xử lý Intent.                                                                     | `intent.setType("text/plain");`                                                    |
+| **`category`**  | Xác định **ngữ cảnh hoặc nhóm** của Intent. Hệ thống dùng category để biết Intent này được phép khởi chạy trong điều kiện nào.                                                                                                     | `Intent.CATEGORY_DEFAULT`, `Intent.CATEGORY_BROWSABLE`, `Intent.CATEGORY_LAUNCHER` |
+| **`extras`**    | Chứa **dữ liệu bổ sung (key–value pairs)** được truyền kèm theo Intent, dùng để gửi thông tin sang Activity/Service đích. Dữ liệu được lưu trong một **Bundle**.                                                                   | `intent.putExtra("id", 1);` hoặc `intent.putExtras(bundle);`                       |
+| **`component`** | Xác định **thành phần cụ thể (ComponentName)** mà Intent muốn gọi đến, ví dụ: Activity, Service, BroadcastReceiver. Dùng cho **Explicit Intent**.                                                                                  | `new Intent(this, DetailActivity.class);`                                          |
+| **`flags`**     | Là **tùy chọn điều khiển cách hệ thống Android khởi chạy Activity** (ví dụ tạo Activity mới, xóa Activity cũ, chạy trong task mới,...).                                                                                            | `intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);`                                  |
+
 
 ---
 
