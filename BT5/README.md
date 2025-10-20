@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-Trong Android, **Intent** là “thông điệp” để yêu cầu hệ thống hoặc một thành phần (component) thực hiện hành động nào đó.  
+Trong Android, **Intents** là một objects của android.content.Intent. Intents sẽ được gửi đến hệ thống android để xác định hành động bạn muốn thực hiện, đối tượng bạn muốn xử lý.
 **Intent Filter** cho phép một component (như Activity, Service, BroadcastReceiver) *khai báo* rằng nó có thể xử lý những loại Intent nào.
 
 > **Intent** = “Tôi muốn làm gì đó.”  
