@@ -10,6 +10,15 @@ Trong Android, **Intent** là “thông điệp” để yêu cầu hệ thống
 
 ---
 
+## Chức năng của Intent  
+
+| Mục đích                                | Giải thích                                                                                 | Ví dụ                                                            |
+| --------------------------------------- | ------------------------------------------------------------------------------------------ | ---------------------------------------------------------------- |
+| 1️⃣ **Chuyển đổi giữa các Activity**    | Dùng để **mở màn hình mới** hoặc **truyền dữ liệu** giữa các Activity trong cùng ứng dụng. | Mở `DetailActivity` từ `MainActivity`                            |
+| 2️⃣ **Gửi dữ liệu giữa các thành phần** | Truyền thông tin qua `putExtra()` và nhận bằng `getIntent().getStringExtra()`              | Gửi tên người dùng, ID sản phẩm, v.v.                            |
+| 3️⃣ **Tương tác với ứng dụng khác**     | Gửi yêu cầu cho **ứng dụng hệ thống hoặc bên thứ ba** xử lý.                               | Gọi điện, gửi email, mở bản đồ, chụp ảnh, chia sẻ nội dung, v.v. |
+
+
 ## Phân loại Intent
 
 | Loại | Mô tả | Ví dụ |
