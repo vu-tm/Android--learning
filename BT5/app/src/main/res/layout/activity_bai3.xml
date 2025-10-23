@@ -36,6 +36,12 @@
             android:text="Xem danh bạ (ACTION_VIEW)"
             android:textSize="20sp" />
 
+        <Button
+            android:id="@+id/btnSendSMS"
+            android:layout_width="385dp"
+            android:layout_height="77dp"
+            android:text="Gửi SMS (ACTION_SENDTO)"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

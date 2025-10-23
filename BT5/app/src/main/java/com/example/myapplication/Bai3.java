@@ -44,5 +44,16 @@ public class Bai3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // 4. Gửi tin SMS
+        Button btnSendSMS = (Button) findViewById(R.id.btnSendSMS);
+        btnSendSMS.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_SENDTO, Uri.parse("sms:5551234"));
+                intent.putExtra("sms_body", "Thu bay nay di choi khong?");
+                startActivity(intent);
+            }
+        });
     }
 }
