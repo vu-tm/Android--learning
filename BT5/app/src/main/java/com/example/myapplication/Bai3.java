@@ -67,5 +67,15 @@ public class Bai3 extends AppCompatActivity {
                 startActivity(myIntent);
             }
         });
+
+        // 6. Nghe nhạc
+        Button btnMusicPlayer = (Button) findViewById(R.id.btnMusicPlayer);
+        btnMusicPlayer.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent("android.intent.action.MUSIC_PLAYER");
+                startActivity(intent);
+            }
+        });
     }
 }
