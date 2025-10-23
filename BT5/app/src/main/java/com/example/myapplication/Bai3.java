@@ -35,5 +35,14 @@ public class Bai3 extends AppCompatActivity {
             }
         });
 
+        // 3. Xem danh bạ
+        Button btnViewContacts = (Button) findViewById(R.id.btnViewContacts);
+        btnViewContacts.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("content://contacts/people/"));
+                startActivity(intent);
+            }
+        });
     }
 }
