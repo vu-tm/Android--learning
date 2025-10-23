@@ -34,6 +34,6 @@ public class Bai3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        
+
     }
 }

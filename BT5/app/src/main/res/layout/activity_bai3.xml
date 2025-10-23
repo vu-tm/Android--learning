@@ -29,6 +29,13 @@
             android:text="Gọi điện (ACTION_DIAL)"
             android:textSize="20sp" />
 
+        <Button
+            android:id="@+id/btnViewContacts"
+            android:layout_width="385dp"
+            android:layout_height="77dp"
+            android:text="Xem danh bạ (ACTION_VIEW)"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
