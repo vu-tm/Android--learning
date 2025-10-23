@@ -77,5 +77,16 @@ public class Bai3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // 7. Mở bản đồ
+        Button btnOpenMap = (Button) findViewById(R.id.btnOpenMap);
+        btnOpenMap.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                String url = "http://maps.google.com/maps?saddr=9.938083,-84.054430&daddr=9.926392,-84.055964";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+                startActivity(intent);
+            }
+        });
     }
 }
