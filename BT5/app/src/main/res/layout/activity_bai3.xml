@@ -42,6 +42,14 @@
             android:layout_height="77dp"
             android:text="Gửi SMS (ACTION_SENDTO)"
             android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnViewImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Xem ảnh (ACTION_GET_CONTENT)"
+            android:textSize="20sp" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
