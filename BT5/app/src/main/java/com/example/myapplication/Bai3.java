@@ -25,6 +25,15 @@ public class Bai3 extends AppCompatActivity {
             }
         });
 
-
+        // 2. Gọi điện
+        Button btnGoiDien = (Button) findViewById(R.id.btnGoiDien);
+        btnGoiDien.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:(+84)123456789"));
+                startActivity(intent);
+            }
+        });
+        
     }
 }
