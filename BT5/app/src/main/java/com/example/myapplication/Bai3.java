@@ -55,5 +55,17 @@ public class Bai3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        // 5. Xem ảnh
+        Button btnViewImage = (Button) findViewById(R.id.btnViewImage);
+        btnViewImage.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent myIntent = new Intent();
+                myIntent.setType("image/pictures/*");
+                myIntent.setAction(Intent.ACTION_GET_CONTENT);
+                startActivity(myIntent);
+            }
+        });
     }
 }
