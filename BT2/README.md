@@ -8,6 +8,14 @@
 + Sử dụng các widget và control cơ bản: Android cung cấp một loạt các widget và control như TextView, Button, EditText, ListView, RecyclerView, và nhiều hơn nữa để xây dựng giao diện người dùng.  
 + Xử lý sự kiện người dùng: Sự kiện người dùng như nhấn nút, chạm vào màn hình, hoặc nhập liệu được xử lý thông qua các phương thức callback như onClick(), onTouchListener(), và onKeyListener().
 
+- LinerLayout: Cho phép sắp xếp các view trên giao diện theo chiều ngang hoặc dọc.
+
+| STT | Thuộc tính    | Nội dung                                      |
+|-----|---------------|-----------------------------------------------|
+| 1   | orientation   | Vertical: theo chiều dọc<br>Horizontal: theo chiều ngang |
+| 2   | background    | Set màu nền                                   |
+| 3   | id            | Giống tên biến, sử dụng khi code              |
+
 ### Thuộc tính kích thước
 | Thuộc tính         | Nghĩa                                                                  | Ví dụ                                                                                       |
 | ------------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
