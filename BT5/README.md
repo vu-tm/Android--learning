@@ -3,6 +3,7 @@
 ## Giới thiệu
 
 - **Intents** là một objects của android.content.Intent. Intents sẽ được gửi đến hệ thống android để xác định hành động bạn muốn thực hiện, đối tượng bạn muốn xử lý.
+<img width="589" height="227" alt="image" src="https://github.com/user-attachments/assets/4478fb39-3f1d-4c5f-9dbc-15bc493d4cae" />
   
 - **Intent Filter** cho phép một component (như Activity, Service, BroadcastReceiver) *khai báo* rằng nó có thể xử lý những loại Intent nào.
 Intent Filter là phần khai báo trong AndroidManifest.xml cho biết thành phần nào có thể nhận và xử lý các loại Intent nào (action, data, category).
@@ -10,7 +11,7 @@ Nếu một component **không có Intent Filter**, nó chỉ có thể được
 
 > **Intent** = “Tôi muốn làm gì đó.”  
 > **Intent Filter** = “Tôi có thể xử lý việc này nếu phù hợp.”
-<img width="589" height="227" alt="image" src="https://github.com/user-attachments/assets/4478fb39-3f1d-4c5f-9dbc-15bc493d4cae" />
+<img width="1112" height="246" alt="image" src="https://github.com/user-attachments/assets/b15a8aad-4c94-4807-8481-8dfc64475036" />
 
 ---
 
