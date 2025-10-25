@@ -15,8 +15,8 @@
 | 1   | orientation      | Vertical: theo chiều dọc<br>Horizontal: theo chiều ngang |
 | 2   | background       | Set màu nền                                   |
 | 3   | id               | Giống tên biến, sử dụng khi code              |
-| 4   | layout_width     | Chiều rộng: wrap_content, match_parent, dp    |
-| 5   | layout_height    | Chiều cao: wrap_content, match_parent, dp     |
+| 4   | layout_width     | Chiều rộng layout    |
+| 5   | layout_height    | Chiều cao layout, chia như kiểu grid     |
 | 6   | gravity          | Căn chỉnh nội dung bên trong: center, left, right, top, bottom |
 | 7   | layout_gravity   | Căn chỉnh view trong parent: center, left, right, top, bottom |
 | 8   | margin           | Khoảng cách bên ngoài: marginStart, marginEnd, marginTop, marginBottom |
