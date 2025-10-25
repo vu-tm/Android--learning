@@ -3,6 +3,7 @@
 ## Giới thiệu
 
 - **Intents** là một objects của android.content.Intent. Intents sẽ được gửi đến hệ thống android để xác định hành động bạn muốn thực hiện, đối tượng bạn muốn xử lý.
+<img width="589" height="227" alt="image" src="https://github.com/user-attachments/assets/4478fb39-3f1d-4c5f-9dbc-15bc493d4cae" />
   
 - **Intent Filter** cho phép một component (như Activity, Service, BroadcastReceiver) *khai báo* rằng nó có thể xử lý những loại Intent nào.
 Intent Filter là phần khai báo trong AndroidManifest.xml cho biết thành phần nào có thể nhận và xử lý các loại Intent nào (action, data, category).
@@ -10,6 +11,7 @@ Nếu một component **không có Intent Filter**, nó chỉ có thể được
 
 > **Intent** = “Tôi muốn làm gì đó.”  
 > **Intent Filter** = “Tôi có thể xử lý việc này nếu phù hợp.”
+<img width="1112" height="246" alt="image" src="https://github.com/user-attachments/assets/b15a8aad-4c94-4807-8481-8dfc64475036" />
 
 ---
 
@@ -20,16 +22,6 @@ Nếu một component **không có Intent Filter**, nó chỉ có thể được
 | 1️⃣ **Chuyển đổi giữa các Activity**    | Dùng để **mở màn hình mới** hoặc **truyền dữ liệu** giữa các Activity trong cùng ứng dụng. | Mở `DetailActivity` từ `MainActivity`                            |
 | 2️⃣ **Gửi dữ liệu giữa các thành phần** | Truyền thông tin qua `putExtra()` và nhận bằng `getIntent().getStringExtra()`              | Gửi tên người dùng, ID sản phẩm, v.v.                            |
 | 3️⃣ **Tương tác với ứng dụng khác**     | Gửi yêu cầu cho **ứng dụng hệ thống hoặc bên thứ ba** xử lý.                               | Gọi điện, gửi email, mở bản đồ, chụp ảnh, chia sẻ nội dung, v.v. |
-
-
-## Phân loại Intent
-
-| Loại | Mô tả | Ví dụ |
-|------|--------|--------|
-| **Explicit Intent** (Tường minh) | Chỉ rõ component đích (Activity, Service cụ thể) | Mở `DetailActivity` trong app |
-| **Implicit Intent** (Ẩn danh) | Chỉ nêu hành động (`ACTION_...`) và dữ liệu (`Uri`), để hệ thống tìm component phù hợp qua `intent-filter` | Mở trình duyệt, gọi điện, chụp ảnh, gửi email |
-
----
 
 ## Cấu trúc Intent cơ bản
 
@@ -46,6 +38,40 @@ Nếu một component **không có Intent Filter**, nó chỉ có thể được
 
 ---
 
+## Phân loại Intent
+
+| Loại | Mô tả | Ví dụ |
+|------|--------|--------|
+| **Explicit Intent** (Tường minh) | Chỉ rõ component đích (Activity, Service cụ thể) | Mở `DetailActivity` trong app |
+| **Implicit Intent** (Không tường minh) | Chỉ nêu hành động (`ACTION_...`) và dữ liệu (`Uri`), để hệ thống tìm component phù hợp qua `intent-filter` | Mở trình duyệt, gọi điện, chụp ảnh, gửi email |
+
+---
+
+
+# Sử dụng
+## Explicit Intent
+Để khởi chạy một Activity cụ thể, hãy sử dụng Intent tường minh
+
+Tạo một Intent
+```java
+Intent intent = new Intent(this, ActivityName.class);
+```
+Sử dụng Intent để khởi động Activity
+```java
+startActivity(intent);
+```
+
+## Implicit intent
+Để yêu cầu Android tìm một Activity có thể xử lý yêu cầu của bạn, hãy sử dụng Intent ngầm định
+
+Tạo một Intent
+```java
+Intent intent = new Intent(action, url);
+```
+Sử dụng Intent để khởi động Activity
+```java
+startActivity(intent);
+```
 ## Explicit Intent — ví dụ cơ bản
 
 **MainActivity.java**
@@ -89,28 +115,6 @@ startActivity(intent);
 
 ---
 
-## Implicit Intent — gọi điện thoại
-
-```java
-Intent intent = new Intent(Intent.ACTION_DIAL);
-intent.setData(Uri.parse("tel:0123456789"));
-startActivity(intent);
-```
-
----
-
-## Intent Filter — cấu trúc chi tiết
-
-```xml
-<intent-filter>
-    <action android:name="android.intent.action.VIEW" />
-    <category android:name="android.intent.category.DEFAULT" />
-    <data
-        android:scheme="https"
-        android:host="www.example.com"
-        android:pathPrefix="/products" />
-</intent-filter>
-```
 
 | Thành phần | Mô tả |
 |-------------|--------|
@@ -188,47 +192,4 @@ finish();
 
 ---
 
-## Deep Links & App Links
 
-| Loại | Mô tả | Ghi chú |
-|------|--------|--------|
-| **Deep Link** | Cho phép mở trực tiếp Activity khi nhấn vào một URL cụ thể. | Cấu hình bằng `intent-filter` có `scheme`, `host`. |
-| **App Link** | Deep Link có xác minh domain (từ Android 6+). | Cần file `assetlinks.json` trên server để xác thực. |
-
----
-
-## Checklist khi tạo Intent Filter
-
-✅ Có `action` đúng.  
-✅ Có `CATEGORY_DEFAULT` nếu dùng `startActivity()`.  
-✅ `data` (scheme/host/path/mime) đúng hoặc đủ tổng quát.  
-✅ Khai `android:exported` rõ ràng.  
-✅ Test bằng `adb`:
-
-```bash
-adb shell am start -a android.intent.action.VIEW -d "https://www.example.com/item/123"
-```
-
----
-
-## Lỗi thường gặp
-
-| Lỗi | Nguyên nhân |
-|------|---------------|
-| Activity không hiển thị trong chooser | Thiếu `CATEGORY_DEFAULT` |
-| Không khớp Intent Filter | `scheme` hoặc `host` không đúng |
-| Không mở được link | `android:exported="false"` hoặc `data` sai |
-| Crash khi nhận dữ liệu | Quên `Uri` hoặc chưa cấp quyền `FLAG_GRANT_READ_URI_PERMISSION` |
-
----
-
-## Tóm tắt nhanh
-
-| Mục | Explicit Intent | Implicit Intent |
-|------|------------------|------------------|
-| Chỉ rõ component | ✅ | ❌ |
-| Cần Intent Filter | ❌ | ✅ |
-| Dùng cho | Gọi Activity trong app | Mở hành động hệ thống hoặc app khác |
-| Ví dụ | `new Intent(this, DetailActivity.class)` | `new Intent(Intent.ACTION_VIEW, Uri.parse("https://..."))` |
-
----

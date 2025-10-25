@@ -8,6 +8,26 @@
 + Sử dụng các widget và control cơ bản: Android cung cấp một loạt các widget và control như TextView, Button, EditText, ListView, RecyclerView, và nhiều hơn nữa để xây dựng giao diện người dùng.  
 + Xử lý sự kiện người dùng: Sự kiện người dùng như nhấn nút, chạm vào màn hình, hoặc nhập liệu được xử lý thông qua các phương thức callback như onClick(), onTouchListener(), và onKeyListener().
 
+- LinerLayout: Cho phép sắp xếp các view trên giao diện theo chiều ngang hoặc dọc.
+
+| STT | Thuộc tính       | Nội dung                                      |
+|-----|------------------|-----------------------------------------------|
+| 1   | orientation      | Vertical: theo chiều dọc<br>Horizontal: theo chiều ngang |
+| 2   | background       | Set màu nền                                   |
+| 3   | id               | Giống tên biến, sử dụng khi code              |
+| 4   | layout_width     | Chiều rộng layout    |
+| 5   | layout_height    | Chiều cao layout, chia như kiểu grid     |
+| 6   | gravity          | Căn chỉnh nội dung bên trong: center, left, right, top, bottom |
+| 7   | layout_gravity   | Căn chỉnh view trong parent: center, left, right, top, bottom |
+| 8   | margin           | Khoảng cách bên ngoài: marginStart, marginEnd, marginTop, marginBottom |
+| 9   | padding          | Khoảng cách bên trong: paddingStart, paddingEnd, paddingTop, paddingBottom |
+| 10  | weight           | Chia không gian theo tỷ lệ (trong LinearLayout) |
+| 11  | text             | Nội dung văn bản hiển thị                     |
+| 12  | textSize         | Kích thước chữ: sp, dp                        |
+| 13  | textColor        | Màu chữ                                       |
+| 14  | src              | Nguồn hình ảnh (cho ImageView)                |
+| 15  | visibility       | Hiển thị: visible, invisible, gone            |
+
 ### Thuộc tính kích thước
 | Thuộc tính         | Nghĩa                                                                  | Ví dụ                                                                                       |
 | ------------------ | ---------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |

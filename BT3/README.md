@@ -10,6 +10,8 @@
 | `onStop()`    | Không còn hiển thị                           |
 | `onDestroy()` | Bị hủy hoàn toàn                             |
 
+### Kết nối Activity với Layout
+<img width="1024" height="391" alt="image" src="https://github.com/user-attachments/assets/21b54bc5-6e38-4b66-8b8b-b9f59f36fdba" />
 
 
 ### TOAST
