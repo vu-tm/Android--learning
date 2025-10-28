@@ -26,7 +26,7 @@
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="455dp"
-            app:srcCompat="@drawable/huhlukatphone"
+            app:srcCompat="@drawable/logosgu"
             android:layout_marginBottom="20dp"/>
 
         <Button
