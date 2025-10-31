@@ -1,6 +1,6 @@
 # 📱 Android Intent & Intent Filter
 
-## Giới thiệu
+## Giới thiệu 
 
 - **Intents** là một objects của android.content.Intent. Intents sẽ được gửi đến hệ thống android để xác định hành động bạn muốn thực hiện, đối tượng bạn muốn xử lý.
 <img width="589" height="227" alt="image" src="https://github.com/user-attachments/assets/4478fb39-3f1d-4c5f-9dbc-15bc493d4cae" />

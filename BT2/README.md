@@ -1,7 +1,7 @@
 # Sum up
 - XML: Xây dựng giao diện người dùng.
 - Activity: Hiển thị giao diện người dùng và tương tác với người dùng.
-- Intent: Kết nối các thành phần của Android trong quá trình chạy. Có thể được dùng để chuyển dữ liệu giữa các Activity hoặc khởi chạy Service
+- Intent: Kết nối các thành phần của Android trong quá trình chạy. Có thể được dùng để chuyển dữ liệu giữa các Activity hoặc khởi chạy Service 
 
 - Giao diện người dùng (UI):  
 + Thiết kế layout bằng XML và Java/Kotlin: Layout XML được sử dụng để xây dựng giao diện người dùng, trong khi Java hoặc Kotlin được sử dụng để tương tác và điều khiển các thành phần trong layout.  
