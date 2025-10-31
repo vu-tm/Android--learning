@@ -20,9 +20,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".OtherActivity"
+            android:exported="false">
+        </activity>
     </application>
-    <activity
-        android:name=".OtherActivity"
-        android:exported="false">
-    </activity>
 </manifest>
