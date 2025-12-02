@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -13,6 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._3123410437BTThamKhao">
 
+        <!--A. Nhóm bài tập về phát nhạc/ âm thanh:-->
         <!--Bài 1A-->
 <!--        <activity-->
 <!--            android:name=".Bai1"-->
@@ -24,8 +27,20 @@
 <!--        </activity>-->
 
         <!--Bài 2A-->
+<!--        <activity-->
+<!--            android:name=".Bai2A"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+
+        <!--B. Nhóm bài tập về hình ảnh-->
+        <!--Bài 1B-->
         <activity
-            android:name=".Bai2A"
+            android:name=".Bai1B"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,5 +48,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
