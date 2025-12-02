@@ -4,6 +4,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -39,8 +41,18 @@
 
         <!--B. Nhóm bài tập về hình ảnh-->
         <!--Bài 1B-->
+<!--        <activity-->
+<!--            android:name=".Bai1B"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <!--Bài 2B-->
         <activity
-            android:name=".Bai1B"
+            android:name=".Bai2B"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
