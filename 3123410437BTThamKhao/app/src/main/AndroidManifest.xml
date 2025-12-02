@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -12,26 +13,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._3123410437BTThamKhao">
 
-        <!--Bài 1-->
+        <!--Bài 1A-->
+<!--        <activity-->
+<!--            android:name=".Bai1"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <!--Bài 2A-->
         <activity
-            android:name=".Bai1"
+            android:name=".Bai2A"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <!--Bài 2-->
-<!--        <activity-->
-<!--            android:name=".Bai2"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--                <uses-permisssion android:name="android.permission.INTERNET" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
     </application>
 
 </manifest>

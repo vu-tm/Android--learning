@@ -4,20 +4,16 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class Bai1 extends AppCompatActivity {
+public class Bai1A extends AppCompatActivity {
 
     MediaPlayer mediaPlayer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.bai1);
+        setContentView(R.layout.bai1a);
 
         Button btnPlay = findViewById(R.id.btnPlay);
         Button btnPause = findViewById(R.id.btnPause);
