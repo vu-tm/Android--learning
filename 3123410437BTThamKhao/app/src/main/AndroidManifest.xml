@@ -51,13 +51,26 @@
 <!--        </activity>-->
 
         <!--Bài 2B-->
+<!--        <activity-->
+<!--            android:name=".Bai2B"-->
+<!--            android:exported="true">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+
+        <!--C. Nhóm bài tập về lưu trữ dữ liệu -->
+        <!--Bài 1C-->
         <activity
-            android:name=".Bai2B"
+            android:name=".Bai1C"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 </manifest>
