@@ -29,18 +29,18 @@
         <!--        </activity>-->
 
         <!--Bài 2-->
-        <!--        <activity-->
-        <!--            android:name=".Bai2"-->
-        <!--            android:exported="true">-->
-        <!--            <intent-filter>-->
-        <!--                <action android:name="android.intent.action.MAIN" />-->
+                <activity
+                    android:name=".Bai2"
+                    android:exported="true">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
 
-        <!--                <category android:name="android.intent.category.LAUNCHER" />-->
-        <!--            </intent-filter>-->
-        <!--        </activity>-->
-        <!--        <service android:name=".ExampleIntentService"-->
-        <!--            android:exported="false">-->
-        <!--        </service>-->
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+                </activity>
+                <service android:name=".ExampleIntentService"
+                    android:exported="false">
+                </service>
         <!--Bài 3-->
         <activity
             android:name=".Bai3"
