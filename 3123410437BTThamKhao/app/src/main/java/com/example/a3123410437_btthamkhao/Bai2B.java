@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Bai2B extends AppCompatActivity {
     ImageView imgSelected;
-    ActivityResultLauncher<Intent> imagePickerlauncher; // Gửi intent
+    ActivityResultLauncher<Intent> imagePickerlauncher; // Vì dùng StartActivityForResult nên cần intent
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +23,12 @@ public class Bai2B extends AppCompatActivity {
         Button btnSelected = findViewById(R.id.btnSelected);
 
         // Khởi tạo launcher để nhận kết quả chọn ảnh
-        imagePickerlauncher = registerForActivityResult( // cần 2 tham số (contract, callback)
-                new ActivityResultContracts.StartActivityForResult(), result -> {
-                    if (result.getResultCode() == RESULT_OK && result.getData() != null) {
+        imagePickerlauncher = registerForActivityResult( // cần 2 tham số (contract, callback) -> Mở activity theo intent rồi trả về kết quả
+                // Tham số 1 : Muốn là gì
+                new ActivityResultContracts.StartActivityForResult(),
+                // Tham số 2 : Khi xong thì làm gì với kết quả
+                result -> {
+                    if (result.getResultCode() == RESULT_OK && result.getData() != null) { // Kiểm tra getResultCode để đảm bảo ng dùng chọn thay vì thoát
                         // ActivityResult.getData() -> Intent
                         // Intent.getData() -> Uri
                         Uri imageUri = result.getData().getData(); // result -> ActivityResult -> Intent -> Uri

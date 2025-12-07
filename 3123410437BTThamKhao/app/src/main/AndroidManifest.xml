@@ -20,7 +20,7 @@
         <!--A. Nhóm bài tập về phát nhạc/ âm thanh:-->
         <!--Bài 1A-->
 <!--        <activity-->
-<!--            android:name=".Bai1"-->
+<!--            android:name=".Bai1A"-->
 <!--            android:exported="true">-->
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
@@ -83,14 +83,14 @@
 <!--        </activity>-->
 
         <!--Bài 3C-->
-<!--        <activity-->
-<!--            android:name=".Bai3C"-->
-<!--            android:exported="true">-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
+        <activity
+            android:name=".Bai3C"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
     </application>
 </manifest>

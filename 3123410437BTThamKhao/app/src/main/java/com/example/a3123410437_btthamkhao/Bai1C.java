@@ -12,7 +12,7 @@ public class Bai1C extends AppCompatActivity {
     EditText edtName;
     Button btnSave;
     TextView txtResult;
-    SharedPreferences sharedPreferences; // Lưu dữ liệu dù đóng máy
+    SharedPreferences sharedPreferences; // Lưu dữ liệu dạng key-value trong bộ nhớ của ứng dụng
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,14 +26,14 @@ public class Bai1C extends AppCompatActivity {
         sharedPreferences = getSharedPreferences("UserData", MODE_PRIVATE); //(name, quyền truy cập file)
 
         // Đọc dữ liệu khi mở lại app
-        String savedName = sharedPreferences.getString("name", "Chưa có dữ liệu");
+        String savedName = sharedPreferences.getString("name", "Chưa có dữ liệu"); // SharedPreferences, Context -> getString
         txtResult.setText("Tên đã lưu: " + savedName);
 
         btnSave.setOnClickListener(view -> { // Khi ng dùng bấm save
-            String name = edtName.getText().toString();
-            SharedPreferences.Editor editor = sharedPreferences.edit();
+            String name = edtName.getText().toString(); // EditText, TextView -> getText().toString()
+            SharedPreferences.Editor editor = sharedPreferences.edit(); // Chỉ editor cho thay đổi trên SharedPreferences
             editor.putString("name", name);
-            editor.apply();
+            editor.apply(); // editor có thể lưu bằng void apply(bất đồng bộ) / boolean commit (đồng bộ) -> nên dùng apply()
 
             txtResult.setText("Tên đã lưu: " + name);
         });
