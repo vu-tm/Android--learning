@@ -16,9 +16,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven("https://jitpack.io")
     }
 }
 
-rootProject.name = "My Image Gallery"
+rootProject.name = "MY IMAGE GALLERY"
 include(":app")
  

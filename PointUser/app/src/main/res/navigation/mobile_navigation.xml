@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/add">
+
+    <fragment
+        android:id="@+id/add"
+        android:name="com.example.khtt.ui.nhapdiem.NhapDiemFragment"
+        android:label="Nhập điểm"
+        tools:layout="@layout/fragment_nhapdiem" />
+
+    <fragment
+        android:id="@+id/use"
+        android:name="com.example.khtt.ui.xaidiem.XaiDiemFragment"
+        android:label="Sử dụng điểm"
+        tools:layout="@layout/fragment_sudungdiem" />
+
+    <fragment
+        android:id="@+id/list"
+        android:name="com.example.khtt.ui.dashboard.DashboardFragment"
+        android:label="Danh sách khách hàng"
+        tools:layout="@layout/fragment_list" />
+
+</navigation>

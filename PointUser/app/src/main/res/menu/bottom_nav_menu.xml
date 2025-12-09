@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/add"
+        android:icon="@drawable/baseline_add_24"
+        android:title="Nhập điểm" />
+
+    <item
+        android:id="@+id/use"
+        android:icon="@drawable/outline_action_key_24"
+        android:title="Sử dụng điểm" />
+
+    <item
+        android:id="@+id/list"
+        android:icon="@drawable/ic_dashboard_black_24dp"
+        android:title="Danh sách khách hàng" />
+
+</menu>
