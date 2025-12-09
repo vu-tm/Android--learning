@@ -1,0 +1,13 @@
+#Tue Dec 09 18:36:14 ICT 2025
+base.0=E\:\\VISUAL\\my-project\\JavaAndroid--learning\\MyImageGallery\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=E\:\\VISUAL\\my-project\\JavaAndroid--learning\\MyImageGallery\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.2=E\:\\VISUAL\\my-project\\JavaAndroid--learning\\MyImageGallery\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
+base.3=E\:\\VISUAL\\my-project\\JavaAndroid--learning\\MyImageGallery\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
+path.0=classes.dex
+path.1=0/classes.dex
+path.2=5/classes.dex
+path.3=classes2.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex
+renamed.2=classes3.dex
+renamed.3=classes4.dex
